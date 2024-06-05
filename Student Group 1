@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+   int main() {
+    int a;
+       scanf("%d",&a);
+       int b=a/4;
+       int d=a%4;
+       int e=d+b;
+       if(a<=100||a>=200)
+       {
+           printf("INVALID INPUT");
+       }
+       else
+       {
+           printf("%d\n%d\n%d\n%d\n",b,b,b,e);
+       }
+    return 0;
+    }
