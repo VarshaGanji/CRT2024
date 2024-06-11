@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    if (n < 1 || n > 10000000) {
+        printf("n must be between 1 and 10^7\n");
+        return 1;
+    }
+
+    long long odd_sum = 0;
+    long long even_sum = 0;
+    for (int i = 0; i < n; i++) {
+        int num;
+        scanf("%d", &num);
+        
+        if (num % 2 == 0) {
+            even_sum += num;
+        } else {
+            odd_sum += num;
+        }
+    }
+
+    printf("%lld\n", odd_sum);
+    printf("%lld\n", even_sum);
+
+    return 0;
+}
+    
